@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+--light-red: hsl(0, 100%, 67%);
+--orangey: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+--violet-blue: hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    color: var(--dark-gray-blue);
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    box-shadow: 0rem 0.8rem 1rem 0.3rem var(--pale-blue);
+    border-radius: 1.5rem;
+      
+}
+
+.result{
+    text-align: center;
+    width: 50%;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    color: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.result-title{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light-lavender);
+    margin-bottom: 1.5rem;
+}
+
+
+.result-circle{
+    margin: 0 auto;
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.result-number{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.number{
+   font-size: 0.7rem;
+   color: var(--light-lavender);
+}
+
+h3{
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.result-text{
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 1rem 1rem;
+    color: var(--light-lavender);
+}
+
+.summary{
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 50%;
+    text-align: left;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+.summary-title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+img{
+    width: 15px;
+}
+
+.summary-reaction, .summary-memory, .summary-verbal, .summary-visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3rem;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.reaction-text, .memory-text, .verbal-text, .visual-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    
+    
+}
+
+.summary-reaction{
+    background-color: hsl(0, 100%, 67%, 0.1);   
+}
+
+.summary-memory{
+    background-color: hsla(39, 100%, 56%, 0.1);   
+}
+
+.summary-verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);   
+}
+.summary-visual{
+    background-color:hsla(234, 85%, 45%, 0.1);   
+}
+
+span{
+    color:hsl(224, 30%, 27%, 0.6);
+}
+
+
+.reaction-text{
+    color: var(--light-red);
+}
+.memory-text{
+    color: var(--orangey);
+}
+.verbal-text{
+    color: var(--green-teal);
+}
+
+.visual-text{
+    color: var(--cobalt-blue);
+}
+
+button{
+ background-color:var(--dark-gray-blue);
+ display: flex; 
+ flex-wrap: wrap;
+ color: var(--white);
+ border-radius: 2rem;
+ border: none;
+ width: 100%;
+ justify-content: center;
+ padding: 0.8rem 0;
+ cursor: pointer;
+ font-weight: 700;
+ font-size: 0.7rem;
+ margin-top: 2rem;
+ margin-bottom: 0.5rem;
+}
+
+button:hover{
+    background: linear-gradient(var(--light-royal-blue), var(--light-slate-blue));
+}
+
+.attribution{
+    position: fixed;
+    bottom: 2rem;
+    font-size: 0.7rem; 
+}
+
+@media only screen and (max-width: 375px) {
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+   main{
+    flex-direction: column;
+    height: 100vh;
+   }
+
+   .result, .summary {
+    width: 100%;
+    flex-direction: column;
+ }
+
+ .result {
+    border-radius: 0 0 1.5rem 1.5rem;
+ }
+
+ .attribution{
+  display: none;
+}
+.summary{
+    font-size: 1rem;
+}
+
+button{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.result-title, .summary-title{
+    font-size: 1.3rem;
+}
+
+.result-text{
+    font-size: 1rem;
+}
+
+}
