@@ -37,6 +37,8 @@ body{
 }
 
 main{
+    width: 45%;
+    margin: auto;
     display: flex;
     box-shadow: 0rem 0.8rem 1rem 0.3rem var(--pale-blue);
     border-radius: 1.5rem;
@@ -45,7 +47,7 @@ main{
 
 .result{
     text-align: center;
-    width: 50%;
+    width:50%;
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     color: white;
     border-radius: 1.5rem;
@@ -90,7 +92,7 @@ h3{
 .result-text{
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 0 1rem 1rem;
+    padding: 0 2rem 1rem;
     color: var(--light-lavender);
 }
 
@@ -193,11 +195,12 @@ button:hover{
 @media only screen and (max-width: 375px) {
 
     body{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
 
    main{
+    width: 100%;
     flex-direction: column;
     height: 100vh;
    }
@@ -226,9 +229,12 @@ button{
 .result-title, .summary-title{
     font-size: 1.3rem;
 }
-
+.result-title{
+    margin-bottom: 1rem;
+}
 .result-text{
     font-size: 1rem;
+    padding:0 1rem;
 }
 
 }
