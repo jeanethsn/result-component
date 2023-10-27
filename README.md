@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets/images/desktop.jpg)![](assets/images/mobil.jpg){ width=150px}
+![](assets/images/desktop.jpg)
 
 
 ### Links
