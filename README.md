@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets/images/desktop.jpg)![](assets/images/mobil.jpg){ width=150px height=150px }
+![](assets/images/desktop.jpg)![](assets/images/mobil.jpg){ width=150px}
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jeanethsn/result-component/tree/main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jeanethsn/result-component](https://github.com/jeanethsn/result-component)
+- Live Site URL: [https://jeanethsn.github.io/result-component/](https://jeanethsn.github.io/result-component/)
 
 ## My process
 
